@@ -1,0 +1,45 @@
+# Python environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets
+.env
+.env.*
+
+# Facial-image data (do not commit dataset images)
+Data/raw/*
+!Data/raw/.gitkeep
+Data/rvf10k/train/fake/*
+!Data/rvf10k/train/fake/.gitkeep
+Data/rvf10k/train/real/*
+!Data/rvf10k/train/real/.gitkeep
+Data/rvf10k/valid/fake/*
+!Data/rvf10k/valid/fake/.gitkeep
+Data/rvf10k/valid/real/*
+!Data/rvf10k/valid/real/.gitkeep
+Data/rvf10k/test/fake/*
+!Data/rvf10k/test/fake/.gitkeep
+Data/rvf10k/test/real/*
+!Data/rvf10k/test/real/.gitkeep
+
+# Generated models and reports
+Models/*.keras
+Models/*.h5
+Models/*.weights.h5
+Results/*
+!Results/.gitkeep
+*.log
